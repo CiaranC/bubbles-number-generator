@@ -182,22 +182,8 @@ $(".gradient").pxgradient({
 //Get balls from hubspot
   function getImageForNumberObj(number){
     var hubspotCdnUrl = "images/";
-    return("<img src="+hubspotCdnUrl+"balls/"+getBallFilename(number)+" alt="+number+">");
+    return(number);
   }
 
-  function getBallFilename(number){
-
-      //if is Lotto then use coloured balls depending on number
-      switch(number % 4){
-        case 1 :
-          return "Green-Ball-"+number+".png";
-        case 2 :
-          return "Red-Ball-"+number+".png";
-        case 3 :
-          return "Blue-Ball-"+number+".png";
-        case 0 :
-          return "Orange-Ball-"+number+".png";
-      }
-  }
 
 

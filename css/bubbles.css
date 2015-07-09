@@ -3,26 +3,7 @@ html,body{
     padding:0;
     margin:0;
 }
-@font-face {
-    font-family: 'Lottery!Regular';
-    src: url('../fonts/lottery_regular-webfont.eot');
-    src: url('../fonts/lottery_regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lottery_regular-webfont.woff') format('woff'),
-         url('../fonts/lottery_regular-webfont.ttf') format('truetype'),
-         url('../fonts/lottery_regular-webfont.html#Lottery!Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Lottery!Bold';
-    src: url('../fonts/lottery_bold-webfont.eot');
-    src: url('../fonts/lottery_bold-webfontd41d.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lottery_bold-webfont.woff') format('woff'),
-         url('../fonts/lottery_bold-webfont.ttf') format('truetype'),
-         url('../fonts/lottery_bold-webfont.html#Lottery!Bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /************************Bubbles Section Styles***************************/
 #bubbles { 
@@ -54,7 +35,7 @@ html,body{
 }
 
 #bubbles h2, p{
-    font-family: 'Lottery!Bold';
+    font-family: helvetica;
 }
 
 #bubbles p{
@@ -177,7 +158,6 @@ html,body{
     text-align: center;
 }
 
-#play-numbers,
 #clear-numbers{
     height: 56px;
     display: inline-block;
@@ -198,28 +178,22 @@ html,body{
     cursor: pointer;
 }
 
-#play-numbers{
-    background: url('../images/play-button.png');
-    transition: all .20s linear; 
-    width: 227px;
-}
-
-#play-numbers.active{
-    background: url('../images/play-button-active.png');
-}
 
 #clear-numbers{
-    background: url('../images/pick-button.png');
     transition: all .20s linear; 
     width: 191px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #333;
+    font-size: 28px;
 }
 
-#clear-numbers.active{
-    background: url('../images/pick-button-active.png');
-}
 
 #numbers li {
-    color: #fff;
+    color: #8f8f8f;
+    font-family: helvetica;
+    font-size: 36px;
+    line-height: 68px;
     background: #1e2a2e; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlMmEyZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyYzNkNDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -244,17 +218,6 @@ html,body{
 
 #numbers li img{
     margin-top: 1px;
-}
-
-#bubbles .dog{
-    width: 173px;
-    height: 133px;
-    position: absolute;
-    bottom: 0;
-    background-image: url(../images/dog.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    left: 30%;
 }
 
 
@@ -294,27 +257,12 @@ overflow: hidden;
           margin-bottom: 0px;
         }
 
-        #play-numbers{
-            background: url('../images/play-button-mobile.png');
-            transition: all .20s linear; 
-            width: 208px;
-        }
-
-        #play-numbers.active{
-            background: url('../images/play-button-mobile-active.png');
-        }
 
         #clear-numbers{
-            background: url('../images/pick-button-mobile.png');
             transition: all .20s linear; 
             width: 208px;
         }
 
-        #clear-numbers.active{
-            background: url('../images/pick-button-mobile-active.png');
-        }
-
-        #play-numbers,
         #clear-numbers{
             height: 45px;
         }
@@ -333,21 +281,10 @@ overflow: hidden;
             display: block;
         }
 
-        #play-numbers,
         #clear-numbers{
             display: block;
             margin: 0 auto;
             margin-bottom: 6px;
-        }
-
-        .dog{
-            width: 143px;
-            height: 103px;
-            position: absolute;
-            bottom: 0;
-            background-image: url(../images/dog.png);
-            background-size: 100%;
-            left:3%;
         }
 
         #bubbles p{
