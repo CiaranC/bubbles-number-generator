@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bubbles</title>
+	<link rel="stylesheet" href="css/bubbles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+
+</head>
+
+<body>
+<!--[if lte IE 9]>
+  <style type="text/css">
+    #numbers li, #bubbles{
+       filter: none;
+    }
+  </style>
+<![endif]-->
+	<section id="bubbles">
+
+		<div class="wrapper">
+
+		<h2 class="gradient">Lucky Number Generator</h2>
+		<p>Pop the bubbles to pick your lucky numbers</p>
+	    
+		    <div class="panel">
+		        <ul id="numbers">
+		            <li></li>
+		            <li></li>
+		            <li></li>
+		            <li></li>
+		            <li></li>
+		            <li></li>
+		        </ul>
+		        <!-- <button id="get-random-numbers">Get Random Numbers</button> -->
+		        <div class="bubble-buttons">
+			        <button id="play-numbers" class="hide-text">Play Numbers</button>
+			        <button id="clear-numbers" class="hide-text">Pick Again</button>
+		        </div>
+
+		    </div>
+			<div class="dog">&nbsp;</div>
+
+		</div>	
+
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/pxgradient-1.0.3.min.js"></script>
+<script src="js/bubbles.js"></script>
+</body>
+</html>
